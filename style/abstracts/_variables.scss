@@ -1,0 +1,18 @@
+// Transitions
+$easeIn: cubic-bezier(0.4, 0, 1, 1);
+$easeOut: cubic-bezier(0, 0, 0.2, 1);
+$easeInOut: cubic-bezier(0.4, 0, 0.2, 1);
+$easeSharp: cubic-bezier(0.4, 0, 0.26 1);
+
+$transitionEaseOutShort: 160ms ease-out;
+$transitionEaseOut: 240ms $easeOut;
+$transitionEaseOutMed: 375ms $easeOut;
+
+$transitionEaseIn: 240ms $easeIn;
+$transitionEaseInMed: 375ms $easeIn;
+
+$transitionEaseInOut: 240ms $easeInOut;
+$transitionEaseInOutMed: 375ms $easeInOut;
+
+$transitionSharp: 240ms $easeSharp;
+$transitionSharpMed: 375ms $easeSharp;

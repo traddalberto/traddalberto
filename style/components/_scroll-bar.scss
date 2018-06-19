@@ -1,0 +1,19 @@
+$scrollBarColor: $colorDark;
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba($scrollBarColor, 0.3);
+  &:hover {
+    background-color: rgba($scrollBarColor, 0.6);
+  }
+  &:active {
+    background-color: rgba($scrollBarColor, 0.9);
+  }
+}

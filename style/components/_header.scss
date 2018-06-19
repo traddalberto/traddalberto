@@ -1,0 +1,113 @@
+.top-bar {
+  background-color: #fff;
+
+  transition: $transitionEaseOut;
+
+  &.dark {
+    background-color: transparent;
+  }
+}
+
+.nav-logo {
+  $hPadding: 12px;
+  position: absolute;
+  left: 24px - $hPadding;
+  padding: 0 $hPadding;
+
+  transition: $transitionEaseOutShort;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.active {
+    opacity: 1;
+  }
+
+  .icon {
+    width: 34px;
+
+    .top-bar.dark & {
+      fill: #fff;
+    }
+  }
+}
+
+.top-bar-social-links {
+  position: absolute;
+  right: 24px - 5px;
+
+  a {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin-left: 8px;
+
+    transition: opacity $transitionEaseOutShort;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .icon {
+    @include rectSize(30px);
+
+    .top-bar.dark & {
+      fill: #fff;
+    }
+  }
+}
+
+.top-bar-nav {
+  position: absolute;
+  height: 100%;
+
+  a {
+    position: relative;
+    height: 100%;
+    padding: 0 20px;
+
+  }
+
+  .text {
+    $height: 40px;
+    height: $height;
+
+    color: $colorDark;
+    font-family: $fontSecondary;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: $height;
+
+    border-bottom: 0px solid rgba($colorDark, 0);
+
+    transition: border-bottom $transitionEaseOutShort;
+
+
+    .top-bar.dark & {
+      color: #fff;
+    }
+
+    span {
+      transition: opacity $transitionEaseOutShort;
+      opacity: 0.7;
+    }
+  }
+
+  a:hover span {
+    opacity: 1;
+  }
+
+  a.active .text {
+    border-bottom: 2px solid rgba($colorDark, 0.3);
+    pointer-events: none;
+
+    span {
+      opacity: 1;
+    }
+  }
+}

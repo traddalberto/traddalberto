@@ -1,0 +1,49 @@
+$hPadding: 36px;
+
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  left: $hPadding;
+  right: $hPadding;
+
+  height: 64px;
+  color: rgba($colorDark, 0.7);
+  font-size: 13px;
+
+  border-top: 1px solid rgba($colorDark, 0.2);
+
+  > * {
+    position: absolute;
+    top: 16px;
+  }
+
+  .dev-credits {
+    left: 0;
+    font-weight: 300;
+
+    a {
+      font-weight: 400;
+    }
+  }
+
+  .footer-social {
+    right: 0;
+    margin-top: -4px;
+    margin-right: -4px;
+
+    a {
+      padding: 4px;
+      opacity: 0.6;
+
+      transition: $transitionEaseOutShort;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .icon {
+      @include rectSize(24px);
+    }
+  }
+}

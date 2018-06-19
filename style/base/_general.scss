@@ -1,0 +1,58 @@
+/* used as base for the website */
+
+html {
+  font-family: $fontPrimary;
+  height: 100%;
+
+  color: #000;
+}
+
+body > div * {
+  transform: translate3d(0, 0, 0);
+}
+
+#___gatsby > section {
+  position: relative;
+
+  float: left;
+  width: 100%;
+}
+
+.icon {
+  fill: $colorDark;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+
+  color: $colorDark;
+}
+
+button {
+  cursor: pointer;
+
+  border: 0;
+  padding: 0;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.gatsby-image-outer-wrapper,
+.gatsby-image-wrapper {
+  height: 100%;
+}
+
+.noselect, svg, button, img {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+
+

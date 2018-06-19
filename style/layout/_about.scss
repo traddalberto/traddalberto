@@ -1,0 +1,52 @@
+.about {
+  height: 100%;
+
+  header {
+    position: relative;
+    margin-top: 64px;
+
+    height: 280px;
+    width: 100%;
+
+    h1 {
+      position: absolute;
+      bottom: 24px;
+
+      width: 100%;
+      margin: 0;
+
+      font-size: 26px;
+      font-weight: 500;
+      color: #fff;
+      text-align: center;
+      font-family: $fontSecondary;
+    }
+
+    .color-overlay {
+      background: linear-gradient(
+        360deg,
+        rgba($colorDark, 0.7) 0%,
+        rgba($colorDark, 0) 100%
+      ),
+    }
+  }
+
+  article {
+    display: flex;
+    justify-content: center;
+
+    .about-text {
+      // font-weight: 300;
+      line-height: 35px;
+      font-size: 24px;
+
+      color: $colorDark2;
+
+      padding: 0 20px;
+
+      max-width: 580px;
+
+      text-align: center;
+    }
+  }
+}

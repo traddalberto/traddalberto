@@ -1,0 +1,69 @@
+.form-container {
+  width: 280px;
+
+  .button {
+    position: relative;
+    float: right;
+
+    &.sending {
+      pointer-events: none;
+      animation-duration: 1.6s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: placeholderAnimate;
+
+      background: linear-gradient(
+        to right,
+        $colorLight2 0%,
+        shade($colorLight3, 1) 20%,
+        $colorLight2 40%
+      );
+
+      background-size: 200px;
+    }
+  }
+
+  .field-container {
+    margin-bottom: 12px;
+  }
+}
+
+.form-container .submitted-form-msg {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: -20px;
+  padding-top: 20px;
+
+  color: $colorDark;
+  transition: $transitionEaseOutMed;
+
+  transform: translate3d(0, 10px, 0);
+
+  background-color: #fff;
+
+  &.show {
+    visibility: visible;
+    opacity: 1;
+
+    transform: translate3d(0, 0, 0);
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+@keyframes placeholderAnimate {
+  from {
+    background-position: -200px 0
+  }
+
+  to {
+    background-position: 200px 0
+  }
+}

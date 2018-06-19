@@ -1,0 +1,45 @@
+{
+  "name": "traddalberto",
+  "description": "Trad Dalberto website",
+  "version": "1.0.0",
+  "author": "Lucas Santos <hello@lucassantos.net>",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "gatsby": "^1.9.270",
+    "gatsby-cli": "^1.1.58",
+    "gatsby-image": "^1.0.52",
+    "gatsby-link": "^1.6.44",
+    "gatsby-plugin-netlify": "^1.0.21",
+    "gatsby-plugin-netlify-cms": "^2.0.1",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-react-next": "^1.0.11",
+    "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-plugin-sharp": "^1.6.47",
+    "gatsby-react-router-scroll": "^1.0.17",
+    "gatsby-source-filesystem": "^1.5.38",
+    "gatsby-transformer-remark": "^1.7.42",
+    "gatsby-transformer-sharp": "^1.6.26",
+    "netlify-cms": "^1.9.0",
+    "react-helmet": "^5.2.0"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-sass-imports": "node update-sass-imports"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1",
+    "prettier": "^1.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
+}

@@ -1,0 +1,52 @@
+.gallery {
+  text-align: center;
+
+  padding-bottom: 64px + 36px;
+}
+
+.photo-container {
+  position: relative;
+
+  // width: 100%;
+  padding: 12px 52px 32px;
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 6px;
+  grid-auto-rows: minmax(auto, 320px);
+  grid-auto-flow: dense;
+
+  .photo {
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover{
+     .gatsby-image-outer-wrapper {
+        transform: scale(1.03) !important;
+      }
+
+      .color-overlay {
+        opacity: 0;
+      }
+    }
+
+    &.featured {
+      grid-column-end: span 2;
+    }
+
+    .gatsby-image-outer-wrapper {
+      transition: 600ms $easeOut;
+      // transition: 300ms ease-out;
+    }
+
+    .color-overlay {
+      background-color: $colorDark;
+      opacity: 0.25;
+
+      transition: 600ms $easeOut;
+    }
+  }
+}
+
+// TODO: fix one collum padding

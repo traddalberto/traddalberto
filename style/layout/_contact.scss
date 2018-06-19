@@ -1,0 +1,108 @@
+.contact {
+  height: 100%;
+
+  > article {
+    display: grid;
+    justify-content: stretch;
+
+    grid-template-columns: 36px 1fr 48px 1px 48px 1fr 36px;
+    grid-template-rows: 36px auto minmax(52px, 90px) auto;
+  }
+
+  .contact-info {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .form-container {
+    grid-column: 6 / span 1;
+    grid-row: 2 / span 3;
+  }
+
+  .social-links {
+    grid-column: 2 / 7;
+    grid-row: 4 / span 1;
+  }
+
+  .horizontal-divider {
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 1;
+
+    background-color: $colorLight2;
+  }
+}
+
+.contact > header {
+  position: relative;
+  margin-top: 64px;
+  height: 200px;
+  width: 100%;
+
+  h1 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    font-family: $fontSecondary;
+  }
+
+  .color-overlay {
+    background: linear-gradient( 360deg, rgba($colorDark, 0.7) 0%, rgba($colorDark, 0) 100%),
+  }
+}
+
+.contact-info {
+  color: $colorDark;
+
+  > * {
+    float: right;
+    clear: both;
+  }
+
+  .phone {
+    font-family: $fontSecondary;
+    font-weight: 500;
+    font-size: 42px;
+    margin-bottom: 16px;
+  }
+
+  .email {
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .address {
+    float: right;
+
+    font-size: 16px;
+    white-space: pre-line;
+    max-width: 300px;
+    line-height: 1.5;
+  }
+}
+
+.contact .social-links {
+  a {
+    @include rectSize(48px);
+
+    border: 1.5px solid $colorLight2;
+    border-radius: 48px;
+
+    margin: 0 18px;
+
+    transition: $transitionEaseOutShort;
+
+    &:hover {
+      background-color: $colorLight2;
+    }
+
+    .icon {
+      @include rectSize(30px);
+    }
+  }
+}

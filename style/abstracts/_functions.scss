@@ -1,0 +1,37 @@
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+/// Return a transition string for multiple properties with same parameters
+/// @access public
+/// @param $transition - transition properties
+/// @param $properties - properties to be animated
+
+@function transition($transition, $properties...) {
+  $str: '';
+  @for $i from 1 through length($properties){
+    @if $i != length($properties) {
+      $str:#{$str}#{nth($properties,$i)} #{$transition}#{', '};
+    } @else {
+      $str:#{$str}#{nth($properties,$i)} #{$transition};
+    }
+  }
+
+  @return $str;
+}
