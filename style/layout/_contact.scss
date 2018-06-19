@@ -1,12 +1,12 @@
 .contact {
-  height: 100%;
+  min-height: 100%;
 
   > article {
     display: grid;
     justify-content: stretch;
 
     grid-template-columns: 36px 1fr 48px 1px 48px 1fr 36px;
-    grid-template-rows: 36px auto minmax(52px, 90px) auto;
+    grid-template-rows: 36px auto 90px auto;
   }
 
   .contact-info {
@@ -93,7 +93,7 @@
     border: 1.5px solid $colorLight2;
     border-radius: 48px;
 
-    margin: 0 18px;
+    margin: 0 18px 68px;
 
     transition: $transitionEaseOutShort;
 
