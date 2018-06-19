@@ -83,8 +83,7 @@ $errorColor: #ef5350;
   pointer-events: none;
 
   .text-field:focus ~ &,
-  .text-field:valid ~ &,
-  .text-field ~ .disable-placeholder {
+  .field-container.not-empty & {
     top: -6px;
     left: 7px;
 
@@ -97,7 +96,7 @@ $errorColor: #ef5350;
     color: $color;
   }
 
-  .field-container.invalid & {
+  .field-container.invalid.not-empty & {
     color: $errorColor;
   }
 
@@ -151,4 +150,8 @@ input[type='number'] {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+input:invalid {
+  box-shadow: none !important;
 }

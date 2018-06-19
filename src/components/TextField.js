@@ -129,10 +129,8 @@ class TextField extends React.PureComponent {
       },
     } = this;
 
-    let textField = null;
-
-    if (!multiLine) {
-      textField = (
+    const textField = (!multiLine)
+      ? (
         <input
           id={id}
           value={value}
@@ -145,11 +143,8 @@ class TextField extends React.PureComponent {
           max={max}
           min={min}
           step={step}
-          required
         />
-      );
-    } else {
-      textField = (
+      ) : (
         <textarea
           id={id}
           value={value}
@@ -158,21 +153,20 @@ class TextField extends React.PureComponent {
           onBlur={this.setValue}
           onChange={this.setValue}
           maxLength={maxlength}
-          required
         />
       );
-    }
+
+    const notEmpty = `${value}`.trim().length > 0;
 
     return (
       <div
-        className={`field-container  ${className || ''} ${!isValid ? 'invalid' : ''}`}
+        className={`field-container  ${className || ''} ${!isValid ? 'invalid' : ''} ${notEmpty ? 'not-empty' : ''}`}
         style={{ width }}
       >
         <div
           className={`input-wrapper ${multiLine ? 'multiline' : ''}`}
         >
           { textField }
-          {/* <div className="focus-bar" /> */}
           <label
             htmlFor={id}
             className={`floating-label ${!placeholder ? 'disable-placeholder' : ''}`}
