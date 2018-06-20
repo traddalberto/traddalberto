@@ -5,23 +5,23 @@
   "author": "Lucas Santos",
   "dependencies": {
     "axios": "^0.18.0",
-    "gatsby": "^1.9.270",
+    "gatsby": "^1.9.272",
     "gatsby-cli": "^1.1.58",
-    "gatsby-image": "^1.0.52",
+    "gatsby-image": "^1.0.54",
     "gatsby-link": "^1.6.44",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-manifest": "^1.0.27",
-    "gatsby-plugin-netlify": "^1.0.19",
+    "gatsby-plugin-netlify": "^1.0.21",
     "gatsby-plugin-netlify-cms": "^1.0.9",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-react-next": "^1.0.11",
     "gatsby-plugin-sass": "^1.0.26",
-    "gatsby-plugin-sharp": "^1.6.47",
+    "gatsby-plugin-sharp": "^1.6.48",
     "gatsby-react-router-scroll": "^1.0.17",
-    "gatsby-source-filesystem": "^1.5.38",
-    "gatsby-transformer-remark": "^1.7.42",
-    "gatsby-transformer-sharp": "^1.6.26",
-    "netlify-cms": "^1.7.0",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-remark": "^1.7.44",
+    "gatsby-transformer-sharp": "^1.6.27",
+    "netlify-cms": "^1.9.2",
     "react-helmet": "^5.2.0"
   },
   "scripts": {
@@ -38,7 +38,7 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.9.1",
-    "prettier": "^1.12.0"
+    "prettier": "^1.13.5"
   },
   "repository": {
     "type": "git",
