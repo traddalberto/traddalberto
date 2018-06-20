@@ -34,7 +34,7 @@ const ContactForm = class extends React.Component {
 
     if (this.state.allIsValid) {
       Axios.post('https://usebasin.com/f/1d495b50c1cb.json', {
-        name: this.state.name.value,
+        nome: this.state.name.value,
         email: this.state.email.value,
         mensagem: this.state.msg.value,
       }, {
@@ -99,8 +99,8 @@ const ContactForm = class extends React.Component {
 
     const msgValidations = [
       {
-        validator: value => value.length >= 10,
-        errorMsg: 'A mensagem deve ter no mínimo 10 caracteres',
+        validator: value => value.length >= 20,
+        errorMsg: 'A mensagem deve ter no mínimo 20 caracteres',
       },
     ];
 
