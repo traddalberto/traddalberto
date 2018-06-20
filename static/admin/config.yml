@@ -25,10 +25,10 @@ collections:
           - label: "Imagens"
             name: "images"
             widget: "onject"
-            - {label: "Título (não aparece no site)", name: "title", widget: "string"}
-            - {label: "Imagem selecionada", name: "img", widget: "image", required: true}
-            - {label: "Destaque", name: "featured", widget: "boolean", default: false, required: true}
-            - {label: "Descrição (opcional)", name: "description", widget: "text"}
+              - {label: "Título (não aparece no site)", name: "title", widget: "string"}
+              - {label: "Imagem selecionada", name: "img", widget: "image", required: true}
+              - {label: "Destaque", name: "featured", widget: "boolean", default: false, required: true}
+              - {label: "Descrição (opcional)", name: "description", widget: "text"}
   - name: "pages" # Used in routes, e.g., /admin/collections/blog
     label: "Páginas do site" # Used in the UI
     create: false
@@ -37,19 +37,19 @@ collections:
         name: "sobre"
         file: "data/pages/Sobre.md"
         fields:
-        - {name: "page", widget: hidden}
-        - {name: "title", widget: hidden}
-        - {label: "Imagem da capa", name: "heroImg", widget: "image", required: true}
-        - {label: "Texto", name: "content", widget: "text", required: true}
+          - {name: "page", widget: hidden}
+          - {name: "title", widget: hidden}
+          - {label: "Imagem da capa", name: "heroImg", widget: "image", required: true}
+          - {label: "Texto", name: "content", widget: "text", required: true}
       - label: "Contato"
         name: "contact"
         file: "data/pages/Contato.md"
         fields:
-        - {name: "page", widget: hidden}
-        - {label: "Imagem da capa", name: "heroImg", widget: "image", required: true}
-        - {label: "Telefone", name: "phone", widget: "string", required: true}
-        - {label: "Email", name: "email", widget: "string", required: true}
-        - {label: "Endereço (use <br> para a quebra de linha)", name: "address", widget: "text", required: true}
-        - {label: "Link para o instagram (opcional)", name: "instagramLink", widget: "string"}
-        - {label: "Link para o facebook (opcional)", name: "facebookLink", widget: "string"}
-        - {label: "Whatsapp (opcional)", name: "whatsapp", widget: "string"}
+          - {name: "page", widget: hidden}
+          - {label: "Imagem da capa", name: "heroImg", widget: "image", required: true}
+          - {label: "Telefone", name: "phone", widget: "string", required: true}
+          - {label: "Email", name: "email", widget: "string", required: true}
+          - {label: "Endereço (use <br> para a quebra de linha)", name: "address", widget: "text", required: true}
+          - {label: "Link para o instagram (opcional)", name: "instagramLink", widget: "string"}
+          - {label: "Link para o facebook (opcional)", name: "facebookLink", widget: "string"}
+          - {label: "Whatsapp (opcional)", name: "whatsapp", widget: "string"}
