@@ -103,13 +103,28 @@ class Layout extends React.Component {
       galleryActive ? '/galeria' : pathname
     );
 
+    const activePageName = {
+      '/': '',
+      '/galeria': ' • Galeria',
+      '/projetos': ' • Projetos',
+      '/sobre': ' • Sobre',
+      '/contato': ' • Contato',
+    };
+
+    const headTags = {
+      title: `${data.site.siteMetadata.title}${activePageName[activePage]}`,
+      description: 'Escritório de arquitetura especializado em design de interiores.',
+    };
+
     return (
       <React.Fragment>
         <Helmet
-          title={data.site.siteMetadata.title}
+          title={headTags.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: headTags.description },
+            { name: 'og:type', content: 'website' },
+            { name: 'og:title', content: data.site.siteMetadata.title },
+            { name: 'og:site_name', content: data.site.siteMetadata.title },
           ]}
           link={[
             {
@@ -118,7 +133,9 @@ class Layout extends React.Component {
               rel: 'stylesheet',
             },
           ]}
-        />
+        >
+          <html lang="pt-BR" />
+        </Helmet>
         <Header
           facebookLink={data.markdownRemark.frontmatter.facebookLink}
           instagramLink={data.markdownRemark.frontmatter.instagramLink}
