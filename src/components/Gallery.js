@@ -1,5 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
+import Link from 'gatsby-link';
 
 import Footer from './Footer';
 import GalleryModal from './GalleryModal';
@@ -51,6 +52,8 @@ const Gallery = class extends React.Component {
         images,
         footer,
         className,
+        isMobile,
+        activePage,
       },
       state: {
         selectedPos,
@@ -73,7 +76,16 @@ const Gallery = class extends React.Component {
               </div>
             ))}
           </div>
-          <button className="button">Inicie um projeto com a gente</button>
+          <Link to="/contato" className="button">Inicie um projeto com a gente</Link>
+          {isMobile &&
+            <div className="bottom-nav">
+              <Link to={activePage !== 'Galeria' ? '/galeria' : '/projetos'}>
+                {activePage !== 'Galeria' ? 'Galeria' : 'Projetos'}
+              </Link>
+              <Link to="/sobre">Sobre</Link>
+              <Link to="/contato">Contato</Link>
+            </div>
+          }
           <Footer phone={footer.phone} email={footer.email} facebookLink={footer.facebookLink} instagramLink={footer.instagramLink} />
         </section>
         <GalleryModal

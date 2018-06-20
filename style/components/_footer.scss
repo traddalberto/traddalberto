@@ -6,11 +6,18 @@ $hPadding: 36px;
   left: $hPadding;
   right: $hPadding;
 
+  // font-family: $fontSecondary;
+
   height: 64px;
-  color: rgba($colorDark, 0.7);
+  color: rgba($colorDark, 0.8);
   font-size: 13px;
 
   border-top: 1px solid rgba($colorDark, 0.2);
+
+  @include mobile {
+    left: 24px;
+    right: 24px;
+  }
 
   > * {
     position: absolute;
@@ -21,8 +28,19 @@ $hPadding: 36px;
     left: 0;
     font-weight: 300;
 
+    @include mobile {
+      top: 20px;
+      font-size: 10px;
+    }
+
     a {
       font-weight: 400;
+    }
+  }
+
+  @include mobile {
+    .footer-contact {
+      display: none;
     }
   }
 

@@ -25,11 +25,27 @@
     opacity: 1;
   }
 
+  @include mobile {
+    .top-bar.dark & {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .top-bar.mobile-menu-is-open & {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
   .icon {
     width: 34px;
 
     .top-bar.dark & {
       fill: #fff;
+    }
+
+    .top-bar.mobile-menu-is-open & {
+      fill: $colorDark;
     }
   }
 }
@@ -37,6 +53,23 @@
 .top-bar-social-links {
   position: absolute;
   right: 24px - 5px;
+
+  transition: opacity $transitionEaseOutShort;
+
+  @include mobile {
+    right: auto;
+    left: 24px - 5px;
+
+    .top-bar.light &,
+    .top-bar.mobile-menu-is-open & {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  @include tablet {
+    right: 12px - 5px;
+  }
 
   a {
     position: relative;
@@ -46,6 +79,15 @@
 
     transition: opacity $transitionEaseOutShort;
     opacity: 0.8;
+
+    @include mobile {
+      margin-left: 0;
+      margin-right: 12px;
+    }
+
+    @include tablet {
+      margin-left: 2px;
+    }
 
     &:hover {
       opacity: 1;
@@ -65,11 +107,18 @@
   position: absolute;
   height: 100%;
 
+  @include mobile {
+    display: none;
+  }
+
   a {
     position: relative;
     height: 100%;
     padding: 0 20px;
 
+    @include tablet {
+      padding: 0 10px
+    }
   }
 
   .text {
@@ -109,5 +158,16 @@
     span {
       opacity: 1;
     }
+  }
+}
+
+/* mobile exclusive */
+.menu-button {
+  position: absolute;
+  top: 0;
+  right: 4px;
+
+  .top-bar.dark & {
+    transform: translate3d(0, 4px, 0);
   }
 }

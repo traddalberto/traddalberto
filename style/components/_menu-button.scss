@@ -1,0 +1,55 @@
+.menu-button {
+  height: 64px;
+  width: 64px;
+
+  transition: $transitionEaseOut;
+
+  &-bars-container {
+    position: absolute;
+    height: 24px;
+    width: 32px;
+
+    transition: $transitionEaseOut;
+  }
+
+  &-bar {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 11px;
+
+    background-color: $colorDark;
+    border-radius: 1px;
+
+    transition: $transitionEaseOut;
+
+    .top-bar.dark & {
+      background-color: #fff;
+    }
+
+    .top-bar.mobile-menu-is-open & {
+      background-color: $colorDark;
+    }
+
+    &.top {
+      transform: translate3d(0, -11px, 0);
+
+      .close & {
+        transform: rotate(45deg);
+      }
+    }
+
+    .close &.middle {
+      transform: rotate(-45deg);
+    }
+
+    &.bottom {
+      transform: translate3d(0, 11px, 0);
+
+      .close & {
+        transform: rotate(45deg);
+        opacity: 0;
+      }
+    }
+  }
+}

@@ -1,15 +1,12 @@
 import React from 'react';
 import Img from 'gatsby-image';
+import Link from 'gatsby-link';
 
 import Footer from '../components/Footer';
-import Icon from '../components/Icon';
 import ContactForm from '../components/ContactForm';
+import SocialLinkButton from '../components/SocialLinkButton';
 
-const SocialLinkButton = ({ href, icon }) => (
-  <a className="center-content" target="_blank" rel="noopener noreferrer" href={href}><Icon name={icon} /></a>
-);
-
-const Contact = ({ data: { markdownRemark: data } }) => (
+const Contact = ({ data: { markdownRemark: data }, isMobile }) => (
   <section className="contact">
     <header>
       <Img sizes={data.fields.heroRelImg.childImageSharp.sizes} />
@@ -38,6 +35,13 @@ const Contact = ({ data: { markdownRemark: data } }) => (
           <SocialLinkButton href={`https://api.whatsapp.com/send?phone=${data.frontmatter.whatsapp}`} icon="whatsapp" />
         }
       </div>
+      {isMobile &&
+        <div className="bottom-nav">
+          <Link to="/galeria">Galeria</Link>
+          <Link to="/projetos">Projetos</Link>
+          <Link to="/sobre">Sobre</Link>
+        </div>
+      }
     </article>
     <Footer phone={data.frontmatter.phone} email={data.frontmatter.email} facebookLink={data.frontmatter.facebookLink} instagramLink={data.frontmatter.instagramLink} />
   </section>

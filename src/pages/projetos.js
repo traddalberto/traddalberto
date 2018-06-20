@@ -1,11 +1,13 @@
 import React from 'react';
 import Gallery from '../components/Gallery';
 
-const Projetos = ({ data }) => (
+const Projetos = ({ data, isMobile }) => (
   <Gallery
     className="projects"
     images={data.gallery.fields.relImgs}
     footer={data.footer.frontmatter}
+    activePage="Projetos"
+    isMobile={isMobile}
   />
 );
 

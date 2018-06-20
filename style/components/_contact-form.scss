@@ -1,5 +1,7 @@
 .form-container {
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
+  min-width: 200px;
 
   .button {
     position: relative;
@@ -34,6 +36,9 @@
   opacity: 0;
   margin-top: -20px;
   padding-top: 20px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: -2px;
 
   color: $colorDark;
   transition: $transitionEaseOutMed;

@@ -1,5 +1,6 @@
 /* eslint import/prefer-default-export: 0 */
 import BezierEasing from './bezierEasing';
+import { windowGlobal } from '../constants';
 
 
 /**
@@ -31,11 +32,11 @@ export const smoothScrollToY = (scrollTargetY = 0, speed = 800, cubicBezier = [0
     const t = easing(p);
 
     if (p < 1) {
-      window.requestAnimationFrame(tick);
+      windowGlobal.requestAnimationFrame(tick);
 
-      window.scrollTo(0, scrollY + ((scrollTargetY - scrollY) * t));
+      windowGlobal.scrollTo(0, scrollY + ((scrollTargetY - scrollY) * t));
     } else {
-      window.scrollTo(0, scrollTargetY);
+      windowGlobal.scrollTo(0, scrollTargetY);
     }
   }
 

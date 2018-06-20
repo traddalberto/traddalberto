@@ -2,6 +2,11 @@
   text-align: center;
 
   padding-bottom: 64px + 36px;
+
+  .bottom-nav {
+    margin-top: 36px;
+    margin-bottom: -(36px - 12px);
+  }
 }
 
 .photo-container {
@@ -16,6 +21,15 @@
   grid-gap: 6px;
   grid-auto-rows: minmax(auto, 320px);
   grid-auto-flow: dense;
+
+  @include mobile {
+    grid-template-columns: 100%;
+    padding: 12px 6px 32px;
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  }
 
   .photo {
     cursor: pointer;
@@ -33,6 +47,10 @@
 
     &.featured {
       grid-column-end: span 2;
+
+      @include mobile {
+        grid-column-end: span 1;
+      }
     }
 
     .gatsby-image-outer-wrapper {

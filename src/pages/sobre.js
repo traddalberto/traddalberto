@@ -1,8 +1,10 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import Img from 'gatsby-image';
+
 import Footer from '../components/Footer';
 
-const About = ({ data }) => (
+const About = ({ data, isMobile }) => (
   <section className="about">
     <header>
       <Img className="fill-container" sizes={data.markdownRemark.fields.heroRelImg.childImageSharp.sizes} />
@@ -12,6 +14,13 @@ const About = ({ data }) => (
     <article>
       <p className="about-text">{data.markdownRemark.frontmatter.content}</p>
     </article>
+    {isMobile &&
+      <div className="bottom-nav">
+        <Link to="/galeria">Galeria</Link>
+        <Link to="/projetos">Projetos</Link>
+        <Link to="/contato">Contato</Link>
+      </div>
+    }
     <Footer
       phone={data.footer.frontmatter.phone}
       email={data.footer.frontmatter.email}
