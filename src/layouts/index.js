@@ -105,10 +105,10 @@ class Layout extends React.Component {
 
     const activePageName = {
       '/': '',
-      '/galeria': ' • Galeria',
-      '/projetos': ' • Projetos',
-      '/sobre': ' • Sobre',
-      '/contato': ' • Contato',
+      '/galeria': ' | Galeria',
+      '/projetos': ' | Projetos',
+      '/sobre': ' | Sobre',
+      '/contato': ' | Contato',
     };
 
     const headTags = {
@@ -125,13 +125,6 @@ class Layout extends React.Component {
             { name: 'og:type', content: 'website' },
             { name: 'og:title', content: data.site.siteMetadata.title },
             { name: 'og:site_name', content: data.site.siteMetadata.title },
-          ]}
-          link={[
-            {
-              href:
-                'https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Source+Sans+Pro:300,400,600',
-              rel: 'stylesheet',
-            },
           ]}
         >
           <html lang="pt-BR" />
