@@ -18,15 +18,17 @@ class Layout extends React.Component {
     this.state = {
       headerDarkTheme: this.props.location.pathname === '/',
       lastPathName: this.props.location.pathname,
-      galleryActive: windowGlobal.location.pathname === '/galeria',
-      homeActive: windowGlobal.location.pathname === '/',
-      isMobile: windowGlobal.innerWidth < 599,
+      galleryActive: windowGlobal && windowGlobal.location.pathname === '/galeria',
+      homeActive: windowGlobal && windowGlobal.location.pathname === '/',
+      isMobile: windowGlobal && windowGlobal.innerWidth < 599,
     };
     this.running = false;
     this.onResizeWindowRunning = false;
 
-    windowGlobal.addEventListener('scroll', this.changeHeaderTheme);
-    windowGlobal.addEventListener('resize', this.onResizeWindow);
+    if (windowGlobal) {
+      windowGlobal.addEventListener('scroll', this.changeHeaderTheme);
+      windowGlobal.addEventListener('resize', this.onResizeWindow);
+    }
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
@@ -57,7 +59,7 @@ class Layout extends React.Component {
   // change header theme when user scrolls
   changeHeaderTheme = () => {
     if (this.props.location.pathname === '/' || this.props.location.pathname === '/galeria') {
-      const lastScrollPos = windowGlobal.scrollY;
+      const lastScrollPos = windowGlobal && windowGlobal.scrollY;
       const galleryPos = windowGlobal.galleryPos() / 2;
 
       if (!this.running) {
