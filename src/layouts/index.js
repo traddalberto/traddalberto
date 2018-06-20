@@ -59,7 +59,7 @@ class Layout extends React.Component {
   // change header theme when user scrolls
   changeHeaderTheme = () => {
     if (this.props.location.pathname === '/' || this.props.location.pathname === '/galeria') {
-      const lastScrollPos = windowGlobal && windowGlobal.scrollY;
+      const lastScrollPos = windowGlobal.scrollY;
       const galleryPos = windowGlobal.galleryPos() / 2;
 
       if (!this.running) {
