@@ -30,7 +30,7 @@ exports.onCreateNode = ({
     if (heroImg) {
       const relImg = path.relative(
         path.dirname(node.fileAbsolutePath),
-        path.join(__dirname, '/static/', heroImg)
+        path.join(__dirname, '/src/images/', heroImg)
       )
 
       createNodeField({
@@ -45,7 +45,7 @@ exports.onCreateNode = ({
       const relImgs = images.map((item) => {
         const relPath = path.relative(
           path.dirname(node.fileAbsolutePath),
-          path.join(__dirname, '/static/', item.img)
+          path.join(__dirname, '/src/images/', item.img)
         )
 
         return {
