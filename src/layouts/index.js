@@ -8,7 +8,6 @@ import { windowGlobal } from '../constants';
 
 import Header from '../components/Header';
 
-// TODO: format 404 page
 // HACK: replacing react router on home/gallery for scroll handling
 const headerDarkPosYLimit = 100;
 
@@ -59,7 +58,7 @@ class Layout extends React.Component {
   changeHeaderTheme = () => {
     if (this.props.location.pathname === '/' || this.props.location.pathname === '/galeria') {
       const lastScrollPos = windowGlobal.scrollY;
-      const galleryPos = windowGlobal.galleryPos / 2;
+      const galleryPos = windowGlobal.galleryPos() / 2;
 
       if (!this.running) {
         windowGlobal.requestAnimationFrame(() => {

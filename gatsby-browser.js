@@ -5,17 +5,18 @@
  */
 
 // You can delete this file if you're not using it
+import { windowGlobal } from './src/constants';
 
-const galleryPos = window.innerHeight - (64 - 8);
+const galleryPos = () => (windowGlobal.innerHeight - (64 - 8));
 
 exports.shouldUpdateScroll = (prevRouterProps) => {
   if (prevRouterProps.pathname === '/galeria') {
-    return [0, galleryPos];
+    return [0, galleryPos()];
   }
 
   return true;
 };
 
 exports.onClientEntry = () => {
-  window.galleryPos = galleryPos;
+  windowGlobal.galleryPos = galleryPos;
 };

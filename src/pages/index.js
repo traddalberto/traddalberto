@@ -45,7 +45,7 @@ const Home = class extends React.Component {
           <div
             className="scroll-indicator"
             onClick={() => {
-              smoothScrollToY(windowGlobal.galleryPos);
+              smoothScrollToY(windowGlobal.galleryPos());
             }}
           >
             <span>Galeria</span>

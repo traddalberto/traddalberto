@@ -1,7 +1,7 @@
 /* eslint import/prefer-default-export: 0 */
 import BezierEasing from './bezierEasing';
-import { windowGlobal } from '../constants';
 
+import { windowGlobal } from '../constants';
 
 /**
  * Scroll smoothly to a position in window
@@ -43,4 +43,6 @@ export const smoothScrollToY = (scrollTargetY = 0, speed = 800, cubicBezier = [0
   // call it once to get started
   tick();
 };
+
+export const getInnerHeight = () => windowGlobal.innerHeight;
 

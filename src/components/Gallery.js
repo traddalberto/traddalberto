@@ -7,7 +7,7 @@ import GalleryModal from './GalleryModal';
 
 // TODO: se der tempo, colocar inicie um projeto com a gente como um bloco da grid
 
-const Gallery = class extends React.Component {
+const Gallery = class extends React.PureComponent {
   constructor(props) {
     super(props);
 
@@ -15,7 +15,7 @@ const Gallery = class extends React.Component {
       selectedPos: null,
       modalIsOpen: false,
     };
-  }
+}
 
   setImage = (i) => {
     document.documentElement.style.overflowY = 'hidden';

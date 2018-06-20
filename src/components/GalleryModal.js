@@ -4,10 +4,6 @@ import Icon from './Icon';
 import AnimateMount from './AnimateMount';
 import Img from './BlurUpLoadingImg';
 
-// TODO: pinch gesture
-// TODO: swipe gesture
-// TODO: match blurUp and image size
-
 const GalleryModal = class extends React.Component {
   state = {
     infoIsExpanded: false,

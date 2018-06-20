@@ -105,7 +105,7 @@ const Header = class extends React.Component {
               to="/galeria"
               onClick={(e) => {
                 if (page === '/' || page === '/galeria') {
-                  smoothScrollToY(windowGlobal.galleryPos);
+                  smoothScrollToY(windowGlobal.galleryPos());
                   e.preventDefault();
                 }
               }}

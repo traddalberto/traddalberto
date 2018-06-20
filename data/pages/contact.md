@@ -7,6 +7,6 @@ address: >
   Rua Padre joão Manoel, 222 cj.22 <br> São Paulo - SP, Brasil, CEP: 01411-000
 instagramLink: https://www.instagram.com/traddalberto_arquitetura
 facebookLink: https://www.facebook.com/TradDalbertoArquitetura
-whatsapp: > # TODO: check if this works
+whatsapp: >
   5511964423328
 ---

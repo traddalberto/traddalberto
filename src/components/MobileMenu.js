@@ -24,7 +24,7 @@ const MobileMenu = ({
           close();
 
           if (activePage === '/' || activePage === '/galeria') {
-            smoothScrollToY(windowGlobal.galleryPos);
+            smoothScrollToY(windowGlobal.galleryPos());
             e.preventDefault();
           }
         }}

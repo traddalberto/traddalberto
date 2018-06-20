@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Trad Dalberto',
+    title: 'Trad Dalberto Arquitetura',
   },
   plugins: [
     {
