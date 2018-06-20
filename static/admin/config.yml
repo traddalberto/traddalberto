@@ -11,8 +11,8 @@ collections:
     create: false
     folder: "data/pages"
     filter:
-      field: type
-      value: images
+      field: "type"
+      value: "images"
     fields:
     - {name: "type", widget: hidden}
     - {name: "page", widget: hidden}
