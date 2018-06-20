@@ -15,7 +15,7 @@ const Gallery = class extends React.PureComponent {
       selectedPos: null,
       modalIsOpen: false,
     };
-}
+  }
 
   setImage = (i) => {
     document.documentElement.style.overflowY = 'hidden';
