@@ -69,4 +69,19 @@
       }
     }
   }
+
+  a {
+    font-family: $fontSecondary;
+    font-size: 24px;
+
+    background-color: $colorLight3;
+
+    transition: 600ms $easeOut;
+
+    // text-transform: uppercase;
+
+    &:hover {
+      background-color: $colorLight2;
+    }
+  }
 }

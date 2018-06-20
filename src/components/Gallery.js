@@ -75,8 +75,11 @@ const Gallery = class extends React.PureComponent {
                 <div className="color-overlay fill-container" />
               </div>
             ))}
+            <Link to="/contato" className="photo center-content">
+              {/* <div className="color-overlay fill-container" /> */}
+              <span>Inicie um projeto<br /> com a gente</span>
+            </Link>
           </div>
-          <Link to="/contato" className="button">Inicie um projeto com a gente</Link>
           {isMobile &&
             <div className="bottom-nav">
               <Link to={activePage !== 'Galeria' ? '/galeria' : '/projetos'}>
