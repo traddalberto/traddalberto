@@ -46,13 +46,6 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: 'gatsby-plugin-offline',
-      options: {
-        navigateFallback: null,
-        navigateFallbackWhitelist: [],
-      },
-    },
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
