@@ -135,11 +135,6 @@ class Layout extends React.Component {
           <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#42515a" />
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="theme-color" content="#ffffff" />
-
-          <script
-            src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-            defer
-          />
         </Helmet>
         <Header
           facebookLink={data.markdownRemark.frontmatter.facebookLink}

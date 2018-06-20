@@ -57,9 +57,9 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-react-next',
-    'gatsby-plugin-netlify',
-    'gatsby-plugin-netlify-cms',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-netlify-cms',
+    'gatsby-plugin-netlify',
   ],
 };
