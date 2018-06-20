@@ -29,6 +29,8 @@ const updateImports = () => {
   });
 };
 
+updateImports();
+
 fs.watch(path.join(__dirname, 'style'), { recursive: true }, (event, file) => {
   if (event !== 'change' && file !== 'main.scss') {
     console.log(`${file}: ${event}`);
