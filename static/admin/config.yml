@@ -18,17 +18,14 @@ collections:
       - {name: "page", widget: hidden}
       - {laber: "Obs: Não faça o upload de imagens maiores que 8mb, use um otimizador de imagens se preciso (ex: http://www.imagesmaller.com/)", name: "instruções", widget: boolean, }
       - label: "Imagens"
-        name: "gallery"
+        name: "images"
         widget: "list"
         required: true
-        field:
-          - label: "Imagens"
-            name: "images"
-            widget: "onject"
-              - {label: "Título (não aparece no site)", name: "title", widget: "string"}
-              - {label: "Imagem selecionada", name: "img", widget: "image", required: true}
-              - {label: "Destaque", name: "featured", widget: "boolean", default: false, required: true}
-              - {label: "Descrição (opcional)", name: "description", widget: "text"}
+        fields:
+          - {label: "Título (não aparece no site)", name: "title", widget: "string"}
+          - {label: "Imagem selecionada", name: "img", widget: "image", required: true}
+          - {label: "Destaque", name: "featured", widget: "boolean", default: false, required: true}
+          - {label: "Descrição (opcional)", name: "description", widget: "text"}
   - name: "pages" # Used in routes, e.g., /admin/collections/blog
     label: "Páginas do site" # Used in the UI
     create: false
