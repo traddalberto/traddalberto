@@ -2,7 +2,7 @@
   "name": "traddalberto",
   "description": "Trad Dalberto website",
   "version": "1.0.0",
-  "author": "Lucas Santos <hello@lucassantos.net>",
+  "author": "Lucas Santos",
   "dependencies": {
     "axios": "^0.18.0",
     "gatsby": "^1.9.270",
@@ -13,7 +13,6 @@
     "gatsby-plugin-manifest": "^1.0.27",
     "gatsby-plugin-netlify": "^1.0.21",
     "gatsby-plugin-netlify-cms": "^2.0.1",
-    "gatsby-plugin-offline": "^1.0.18",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-react-next": "^1.0.11",
     "gatsby-plugin-sass": "^1.0.26",

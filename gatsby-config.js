@@ -3,6 +3,9 @@ module.exports = {
     title: 'Trad Dalberto Arquitetura',
   },
   plugins: [
+    'gatsby-plugin-react-next',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -34,24 +37,21 @@ module.exports = {
         display: 'minimal-ui',
         icons: [
           {
-            src: '/android-chrome-192x192.png',
+            src: 'assets/android-chrome-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: '/android-chrome-512x512.png',
+            src: 'assets/android-chrome-512x512.png',
             sizes: '512x512',
             type: 'image/png',
           },
         ],
       },
     },
-    'gatsby-transformer-remark',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
-    'gatsby-plugin-react-next',
-    'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-transformer-remark',
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-netlify',
   ],
