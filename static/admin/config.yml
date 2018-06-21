@@ -11,27 +11,41 @@ public_folder: "static"
 collections:
   - name: "fotos" # Used in routes, e.g., /admin/collections/blog
     label: "Fotos" # Used in the UI
-    create: false
-    folder: "data/pages"
-    filter:
-      field: "type"
-      value: "images"
-    fields:
-      - {name: "title", widget: hidden}
-      - {name: "type", widget: hidden}
-      - {label: "Obs: Não faça o upload de imagens maiores que 8mb, use um otimizador de imagens se preciso (ex: http://www.imagesmaller.com/)", name: "instruções", widget: boolean, }
-      - label: "Imagens"
-        name: "images"
-        widget: "list"
-        required: true
+    files:
+      - label: "Galeria"
+        name: "galeria"
+        file: "data/pages/Galeria.md"
         fields:
-          - {label: "Título (não aparece no site)", name: "title", widget: "string"}
-          - {label: "Imagem selecionada", name: "img", widget: "image", required: true}
-          - {label: "Destaque", name: "featured", widget: "boolean", default: false, required: true}
-          - {label: "Descrição (opcional)", name: "description", widget: "text"}
+          - {name: "type", widget: hidden}
+          - {name: "title", widget: hidden}
+          - {label: "Obs: Não faça o upload de imagens maiores que 8mb, use um otimizador de imagens se preciso (ex: http://www.imagesmaller.com/)", name: "instruções", widget: boolean, }
+          - label: "Imagens"
+            name: "images"
+            widget: "list"
+            required: true
+            fields:
+              - {label: "Título (não aparece no site)", name: "title", widget: "string"}
+              - {label: "Imagem selecionada", name: "img", widget: "image", required: true}
+              - {label: "Destaque", name: "featured", widget: "boolean", default: false, required: true}
+              - {label: "Descrição (opcional)", name: "description", widget: "text"}
+      - label: "Projetos"
+        name: "projetos"
+        file: "data/pages/Projetos.md"
+        fields:
+          - {name: "type", widget: hidden}
+          - {name: "title", widget: hidden}
+          - {label: "Obs: Não faça o upload de imagens maiores que 8mb, use um otimizador de imagens se preciso (ex: http://www.imagesmaller.com/)", name: "instruções", widget: boolean, }
+          - label: "Imagens"
+            name: "images"
+            widget: "list"
+            required: true
+            fields:
+              - {label: "Título (não aparece no site)", name: "title", widget: "string"}
+              - {label: "Imagem selecionada", name: "img", widget: "image", required: true}
+              - {label: "Destaque", name: "featured", widget: "boolean", default: false, required: true}
+              - {label: "Descrição (opcional)", name: "description", widget: "text"}
   - name: "pages" # Used in routes, e.g., /admin/collections/blog
     label: "Páginas do site" # Used in the UI
-    create: false
     files:
       - label: "Sobre"
         name: "sobre"
@@ -49,7 +63,7 @@ collections:
           - {label: "Imagem da capa", name: "heroImg", widget: "image", required: true}
           - {label: "Telefone", name: "phone", widget: "string", required: true}
           - {label: "Email", name: "email", widget: "string", required: true}
-          - {label: "Endereço (use <br> para a quebra de linha)", name: "address", widget: "text", required: true}
+          - {label: "Endereço", name: "address", widget: "markdown", required: true}
           - {label: "Link para o instagram (opcional)", name: "instagramLink", widget: "string"}
           - {label: "Link para o facebook (opcional)", name: "facebookLink", widget: "string"}
           - {label: "Whatsapp (opcional)", name: "whatsapp", widget: "string"}
