@@ -6,7 +6,7 @@ backend:
     - editor
 
 media_folder: "static/images" # Media files will be stored in the repo under src/images
-public_folder: "static"
+public_folder: "/images"
 
 collections:
   - name: "fotos" # Used in routes, e.g., /admin/collections/blog
