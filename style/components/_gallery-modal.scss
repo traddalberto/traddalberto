@@ -128,9 +128,8 @@
     opacity: 0;
 
     @include mobile {
-      width: calc(100% - (16px * 2));
+      width: 100%;
       padding-bottom: 64px;
-
       border-radius: 0;
     }
 
