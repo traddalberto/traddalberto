@@ -66,4 +66,4 @@ collections:
           - {label: "Endereço", name: "address", widget: "markdown", required: true}
           - {label: "Link para o instagram (opcional)", name: "instagramLink", widget: "string"}
           - {label: "Link para o facebook (opcional)", name: "facebookLink", widget: "string"}
-          - {label: "Whatsapp (opcional)", name: "whatsapp", widget: "string"}
+          - {label: "Whatsapp no formato ddi+ddd+num sem espaço ex: 5511988887777 (opcional)", name: "whatsapp", widget: "string"}
