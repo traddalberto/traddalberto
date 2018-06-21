@@ -33,7 +33,15 @@ const Home = class extends React.Component {
       <React.Fragment>
         <section className="home center-content">
           <div className="video center-content">
-            <video ref={(i) => { this.video = i; }} poster="/video/video-poster.jpg" src="/video/video-loop.v3.600kbps.mp4" muted autoPlay loop />
+            <video
+              ref={(i) => { this.video = i; }}
+              src="/video/video-loop.v3.600kbps.mp4"
+              muted
+              autoPlay
+              loop
+              playsinline
+              async
+            />
             <div className="color-overlay" />
           </div>
           <div className="centered-container">
