@@ -1,6 +1,6 @@
 ---
 page: contact
-heroImg: contact-hero.jpg
+heroImg: /images/contact-hero.jpg
 phone: 11 3294 3600
 email: contato@traddalberto.com.br
 address: >
