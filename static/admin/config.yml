@@ -15,6 +15,7 @@ collections:
       - label: "Galeria"
         name: "galeria"
         file: "data/pages/Galeria.md"
+        delete: false
         fields:
           - {name: "type", widget: hidden}
           - {name: "title", widget: hidden}
@@ -31,6 +32,7 @@ collections:
       - label: "Projetos"
         name: "projetos"
         file: "data/pages/Projetos.md"
+        delete: false
         fields:
           - {name: "type", widget: hidden}
           - {name: "title", widget: hidden}
@@ -50,6 +52,7 @@ collections:
       - label: "Sobre"
         name: "sobre"
         file: "data/pages/Sobre.md"
+        delete: false
         fields:
           - {name: "page", widget: hidden}
           - {name: "title", widget: hidden}
@@ -58,6 +61,7 @@ collections:
       - label: "Contato"
         name: "contact"
         file: "data/pages/Contato.md"
+        delete: false
         fields:
           - {name: "page", widget: hidden}
           - {label: "Imagem da capa", name: "heroImg", widget: "image", required: true}
