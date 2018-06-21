@@ -1,6 +1,7 @@
 backend:
   name: github
-  repo: lucaslos/traddalberto # Branch to update (optional; defaults to master)
+  repo: lucaslos/traddalberto
+  branch: master
 
 media_folder: "src/images" # Media files will be stored in the repo under src/images
 public_folder: "static"
