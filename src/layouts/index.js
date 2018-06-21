@@ -120,18 +120,16 @@ class Layout extends React.Component {
       <React.Fragment>
         <Helmet
           title={headTags.title}
-          meta={[
-            { name: 'description', content: headTags.description },
-            { name: 'og:type', content: 'website' },
-            { name: 'og:title', content: data.site.siteMetadata.title },
-            { name: 'og:site_name', content: data.site.siteMetadata.title },
-          ]}
         >
           <html lang="pt-BR" />
+          <meta name="description" content={headTags.description} />
+          <meta name="og:type" content="website" />
+          <meta name="og:title" content={data.site.siteMetadata.title} />
+          <meta name="og:site_name" content={data.site.siteMetadata.title} />
+
           <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
-          {/* <link rel="manifest" href="/assets/site.webmanifest" /> */}
           <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#42515a" />
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="theme-color" content="#ffffff" />
