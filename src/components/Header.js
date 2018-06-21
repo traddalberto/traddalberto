@@ -75,7 +75,7 @@ const Header = class extends React.Component {
           />
         }
         <header
-          className={`top-bar center-content ${!darkTheme ? 'light' : 'dark'} ${mobileMenuIsOpen ? 'mobile-menu-is-open' : ''}`}
+          className={`top-bar center-content noselect ${!darkTheme ? 'light' : 'dark'} ${mobileMenuIsOpen ? 'mobile-menu-is-open' : ''}`}
         >
           <Link
             to="/"

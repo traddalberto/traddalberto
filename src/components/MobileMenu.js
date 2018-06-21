@@ -15,7 +15,7 @@ const MobileMenu = ({
   whatsapp,
   close,
 }) => (
-  <div className={`mobile-menu ${isOpen ? 'show' : ''}`}>
+  <div className={`mobile-menu noselect ${isOpen ? 'show' : ''}`}>
     <div className="mobile-menu-menu-links">
       <Link
         className={activePage === '/galeria' ? 'active' : ''}

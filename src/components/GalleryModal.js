@@ -51,7 +51,7 @@ const GalleryModal = class extends React.Component {
 
     return (
       <AnimateMount
-        containerClass="modal gallery-modal"
+        containerClass="modal gallery-modal noselect"
         mounted={isOpen}
       >
         <div className="image-container">
@@ -77,7 +77,7 @@ const GalleryModal = class extends React.Component {
         {description &&
           <div key={pos} className={`image-info ${infoIsExpanded ? 'expanded' : ''}`}>
             <div className="info-text-wrapper">
-              <div className="scrollable"><Markdown source={description} /></div>
+              <div className="scrollable disable-noselect"><Markdown source={description} /></div>
             </div>
             <button className="info-button center-content" title={infoIsExpanded ? 'fechar' : 'Sobre o projeto'} onClick={this.toggleInfoIsExpanded}>
               <Icon name="info" className="info-icon" />
