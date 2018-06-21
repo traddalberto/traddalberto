@@ -24,5 +24,6 @@ images:
     featured: false
     img: /images/IMG_5183.jpg
     title: '4'
+  - {}
 ---
 
