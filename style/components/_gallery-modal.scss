@@ -112,10 +112,11 @@
     bottom: 0;
     left: 50%;
 
-    width: 500px;
+    max-width: 500px;
+    min-width: 200px;
     font-size: 16px;
     font-weight: 400;
-    padding: 16px 16px 52px;
+    padding: 8px 16px 52px;
     overflow-y: auto;
     overflow-x: hidden;
 
