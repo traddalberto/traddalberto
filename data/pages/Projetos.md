@@ -1,6 +1,7 @@
 ---
 type: images
 page: projects
+name: Projetos
 images:
   - img: TD_20150731-0016.jpg
     title: Teste
