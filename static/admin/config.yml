@@ -1,7 +1,9 @@
 backend:
-  name: github
-  repo: lucaslos/traddalberto
+  name: git-gateway
   branch: master
+  accept_roles: #optional - accepts all users if left out
+    - admin
+    - editor
 
 media_folder: "src/images" # Media files will be stored in the repo under src/images
 public_folder: "static"
