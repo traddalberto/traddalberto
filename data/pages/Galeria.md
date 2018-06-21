@@ -1,7 +1,6 @@
 ---
 type: images
-page: gallery
-name: Galeria
+title: Galeria
 images:
   - img: IMG_4980.jpg
     featured: true

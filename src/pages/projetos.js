@@ -16,7 +16,7 @@ export default Projetos;
 
 export const query = graphql`
   query projectsQuery {
-    gallery: markdownRemark(frontmatter: {page: {eq: "projects"}}) {
+    gallery: markdownRemark(frontmatter: {title: {eq: "Projetos"}}) {
       fields {
         relImgs {
           featured

@@ -96,7 +96,7 @@ export default Home;
 
 export const query = graphql`
   query indexQuery {
-    gallery: markdownRemark(frontmatter: {page: {eq: "gallery"}}) {
+    gallery: markdownRemark(frontmatter: {title: {eq: "Galeria"}}) {
       fields {
         relImgs {
           featured
