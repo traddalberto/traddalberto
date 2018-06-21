@@ -27,7 +27,7 @@ collections:
               - {label: "Título (não aparece no site)", name: "title", widget: "string"}
               - {label: "Imagem selecionada", name: "img", widget: "image", required: true}
               - {label: "Destaque", name: "featured", widget: "boolean", default: false, required: true}
-              - {label: "Descrição (opcional)", name: "description", widget: "text"}
+              - {label: "Descrição (opcional)", name: "description", widget: "markdown"}
       - label: "Projetos"
         name: "projetos"
         file: "data/pages/Projetos.md"
@@ -43,7 +43,7 @@ collections:
               - {label: "Título (não aparece no site)", name: "title", widget: "string"}
               - {label: "Imagem selecionada", name: "img", widget: "image", required: true}
               - {label: "Destaque", name: "featured", widget: "boolean", default: false, required: true}
-              - {label: "Descrição (opcional)", name: "description", widget: "text"}
+              - {label: "Descrição (opcional)", name: "description", widget: "markdown"}
   - name: "pages" # Used in routes, e.g., /admin/collections/blog
     label: "Páginas do site" # Used in the UI
     files:
