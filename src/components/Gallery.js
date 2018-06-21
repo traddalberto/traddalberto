@@ -54,6 +54,7 @@ const Gallery = class extends React.PureComponent {
         className,
         isMobile,
         activePage,
+        contactHeroImg,
       },
       state: {
         selectedPos,
@@ -71,13 +72,16 @@ const Gallery = class extends React.PureComponent {
                 className={`photo ${img.featured ? 'featured' : ''}`}
                 onClick={() => this.setImage(i)}
               >
-                <Img id={i} sizes={img.relPath.childImageSharp.sizes} />
+                <Img sizes={img.relPath.childImageSharp.sizes} />
                 <div className="color-overlay fill-container" />
               </div>
             ))}
-            <Link to="/contato" className="photo center-content">
-              {/* <div className="color-overlay fill-container" /> */}
-              <span>Inicie um projeto<br /> com a gente</span>
+            <Link to="/contato" className="photo">
+              <Img sizes={contactHeroImg} />
+              <div className="color-overlay fill-container" />
+              <div className="text-wrapper fill-container center-content">
+                <span>Inicie um projeto<br /> com a gente</span>
+              </div>
             </Link>
           </div>
           {isMobile &&

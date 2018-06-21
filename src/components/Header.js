@@ -29,16 +29,16 @@ const Header = class extends React.Component {
   }
 
   toggleMobileMenu = () => {
-    document.documentElement.style.overflowY =
-      !this.state.mobileMenuIsOpen
-        ? 'hidden'
-        : null;
+    // document.documentElement.style.overflowY =
+    //   !this.state.mobileMenuIsOpen
+    //     ? 'hidden'
+    //     : null;
 
     this.setState({ mobileMenuIsOpen: !this.state.mobileMenuIsOpen });
   }
 
   closeMobileMenu = () => {
-    document.documentElement.style.overflowY = null;
+    // document.documentElement.style.overflowY = null;
 
     this.setState({ mobileMenuIsOpen: false });
   }

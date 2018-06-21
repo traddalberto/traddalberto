@@ -7,6 +7,20 @@
     text-align: center;
   }
 
+  h1 {
+    font-size: 72px;
+    font-weight: normal;
+    margin: 0;
+
+    color: $colorDark;
+
+    text-shadow: 6px 6px 0 rgba($colorDark, 0.3);
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
   nav {
     height: 48px;
     max-width: 100%;

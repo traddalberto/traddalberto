@@ -143,7 +143,7 @@ const ContactForm = class extends React.Component {
           ) : (
             <div>
               <h1>Mensagem enviada :)</h1>
-              <span>Assim que possível vamos responder sua mensagem</span>
+              <span>Responderemos sua mensagem em breve</span>
             </div>
           )}
         </div>

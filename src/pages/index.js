@@ -54,8 +54,9 @@ const Home = class extends React.Component {
         </section>
         <Gallery
           images={data.gallery.fields.relImgs}
-          footer={data.footer.frontmatter}
+          footer={data.contact.frontmatter}
           isMobile={isMobile}
+          contactHeroImg={data.contact.fields.heroRelImg.childImageSharp.sizes}
           activePage="Galeria"
         />
         <AnimateMount
@@ -104,12 +105,21 @@ export const query = graphql`
       }
     }
 
-    footer: markdownRemark(frontmatter: { page: { eq: "contact" }}) {
+    contact: markdownRemark(frontmatter: { page: { eq: "contact" }}) {
       frontmatter {
         instagramLink
         facebookLink
         phone
         email
+      }
+      fields {
+        heroRelImg {
+          childImageSharp {
+            sizes(maxWidth: 700, quality: 70) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
       }
     }
   }

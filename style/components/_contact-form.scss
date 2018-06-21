@@ -3,6 +3,10 @@
   max-width: 280px;
   min-width: 200px;
 
+  @include mobile {
+    max-width: calc(100% - 48px * 2);
+  }
+
   .button {
     position: relative;
     float: right;

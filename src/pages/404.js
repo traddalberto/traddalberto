@@ -5,8 +5,8 @@ import Link from 'gatsby-link';
 const NotFoundPage = ({ data }) => (
   <section className="not-found-page center-content">
     <article>
-      <h1>Erro 404</h1>
-      <p>Você digitou um endereço que não existe.<br />Tente usar algum dos links abaixo.</p>
+      <h1>404</h1>
+      <p>Ops... essa página não existe.<br />Tente usar algum dos links abaixo.</p>
       <nav>
         <Link to="/galeria">Galeria</Link>
         <Link to="/projetos">Projetos</Link>
