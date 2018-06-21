@@ -1,6 +1,7 @@
 import React from 'react';
 import Img from 'gatsby-image';
 import Link from 'gatsby-link';
+import Markdown from 'react-markdown';
 
 import Footer from '../components/Footer';
 import ContactForm from '../components/ContactForm';
@@ -17,7 +18,7 @@ const Contact = ({ data: { markdownRemark: data }, isMobile }) => (
       <div className="contact-info">
         <div className="phone">{data.frontmatter.phone}</div>
         <a className="email" href={`mailto:${data.frontmatter.email}`}>{data.frontmatter.email}</a>
-        <div className="address">{data.frontmatter.address.replace('<br>', '\n')}</div>
+        <div className="address"><Markdown source={data.frontmatter.address} /></div>
       </div>
       <ContactForm />
       <div className="horizontal-divider" />

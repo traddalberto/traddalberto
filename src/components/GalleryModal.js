@@ -1,4 +1,5 @@
 import React from 'react';
+import Markdown from 'react-markdown';
 
 import Icon from './Icon';
 import AnimateMount from './AnimateMount';
@@ -76,7 +77,7 @@ const GalleryModal = class extends React.Component {
         {description &&
           <div key={pos} className={`image-info ${infoIsExpanded ? 'expanded' : ''}`}>
             <div className="info-text-wrapper">
-              <div className="scrollable">{description}</div>
+              <div className="scrollable"><Markdown source={description} /></div>
             </div>
             <button className="info-button center-content" title={infoIsExpanded ? 'fechar' : 'Sobre o projeto'} onClick={this.toggleInfoIsExpanded}>
               <Icon name="info" className="info-icon" />
