@@ -125,7 +125,7 @@ const ContactForm = class extends React.Component {
           handleChange={this.handleMsgChange}
           validations={msgValidations}
           multiLine
-          requiredErrorMsg="Digite alguma mensagem"
+          requiredErrorMsg="Digite uma mensagem"
           required
         />
         <button
