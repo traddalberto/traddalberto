@@ -42,7 +42,9 @@ exports.onCreateNode = ({
 
     // create relativePath field for gallery imgs
     if (images) {
-      const relImgs = images.map((item) => {
+      const relImgs = images
+      .filter(item => item.img)
+      .map((item) => {
         const relPath = path.relative(
           path.dirname(node.fileAbsolutePath),
           path.join(__dirname, '/static/', item.img)
