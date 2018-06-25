@@ -33,7 +33,7 @@ const ContactForm = class extends React.Component {
     this.setState({ isSending: true });
 
     if (this.state.allIsValid) {
-      Axios.post('https://usebasin.com/f/1d495b50c1cb.json', {
+      Axios.post('https://usebasin.com/f/06b38bd5f8df.json', {
         nome: this.state.name.value,
         email: this.state.email.value,
         mensagem: this.state.msg.value,
