@@ -19,7 +19,7 @@ collections:
         fields:
           - {name: "type", widget: hidden}
           - {name: "title", widget: hidden}
-          - {label: "Obs: Não faça o upload de imagens maiores que 8mb, use um otimizador de imagens se preciso (ex: http://www.imagesmaller.com/)", name: "instruções", widget: boolean, }
+          - {label: "Obs: Não faça o upload de imagens maiores que 4mb, use um otimizador de imagens se preciso (ex: http://www.imagesmaller.com/)", name: "instruções", widget: boolean, }
           - label: "Imagens"
             name: "images"
             widget: "list"
