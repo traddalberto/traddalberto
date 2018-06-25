@@ -39,7 +39,7 @@ const Home = class extends React.Component {
               muted
               autoPlay
               loop
-              playsinline
+              playsInline
               async
             />
             <div className="color-overlay" />
