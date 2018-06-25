@@ -62,11 +62,13 @@ const Gallery = class extends React.PureComponent {
       },
     } = this;
 
+    const flattenedImages = images.map(item => item.node.fields.images).reduce((a, b) => a.concat(b), []);
+
     return (
       <React.Fragment>
         <section className={`gallery ${className}`}>
           <div className="photo-container">
-            {images.map((img, i) => (
+            {flattenedImages.map((img, i) => (
               <div
                 key={i}
                 className={`photo ${img.featured ? 'featured' : ''}`}
@@ -98,7 +100,7 @@ const Gallery = class extends React.PureComponent {
         <GalleryModal
           pos={selectedPos}
           closeModal={this.closeModal}
-          images={images}
+          images={flattenedImages}
           isOpen={modalIsOpen}
           increasePos={this.increasePos}
           decreasePos={this.decreasePos}

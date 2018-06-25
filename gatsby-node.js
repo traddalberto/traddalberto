@@ -24,7 +24,7 @@ exports.onCreateNode = ({
   const { frontmatter } = node;
 
   if (frontmatter) {
-    const { heroImg, images, page } = frontmatter;
+    const { heroImg, gallery, project, description } = frontmatter;
 
     // create relativePath field for hero imgs
     if (heroImg) {
@@ -41,8 +41,8 @@ exports.onCreateNode = ({
     }
 
     // create relativePath field for gallery imgs
-    if (images) {
-      const relImgs = images
+    if (gallery) {
+      const relImgs = gallery
       .filter(item => item.img)
       .map((item) => {
         const relPath = path.relative(
@@ -53,14 +53,39 @@ exports.onCreateNode = ({
         return {
           imgRef: item.img,
           relPath,
-          description: item.description,
+          description: description || item.description,
           featured: item.featured,
         }
       });
 
       createNodeField({
         node,
-        name: 'relImgs',
+        name: 'galleryRelImgs',
+        value: relImgs,
+      });
+    }
+
+    // create relativePath field for project imgs
+    if (project) {
+      const relImgs = project
+      .filter(item => item.img)
+      .map((item) => {
+        const relPath = path.relative(
+          path.dirname(node.fileAbsolutePath),
+          path.join(__dirname, '/static/', item.img)
+        )
+
+        return {
+          imgRef: item.img,
+          relPath,
+          description: description || item.description,
+          featured: item.featured,
+        }
+      });
+
+      createNodeField({
+        node,
+        name: 'projectRelImgs',
         value: relImgs,
       });
     }

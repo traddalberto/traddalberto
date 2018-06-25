@@ -1,4 +1,5 @@
 ---
+type: project
 instruções: true
 title: Projeto 1
 date: '2018-06-25T05:02:45-03:00'

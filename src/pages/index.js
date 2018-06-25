@@ -61,7 +61,7 @@ const Home = class extends React.Component {
           </div>
         </section>
         <Gallery
-          images={data.gallery.fields.relImgs}
+          images={data.gallery.edges}
           footer={data.contact.frontmatter}
           isMobile={isMobile}
           contactHeroImg={data.contact.fields.heroRelImg.childImageSharp.sizes}
@@ -96,17 +96,24 @@ export default Home;
 
 export const query = graphql`
   query indexQuery {
-    gallery: markdownRemark(frontmatter: {title: {eq: "Galeria"}}) {
-      fields {
-        relImgs {
-          featured
-          imgRef
-          description
-          relPath {
-            childImageSharp {
-              sizes(maxWidth: 700, quality: 70) {
-                ...GatsbyImageSharpSizes
+    gallery: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] },
+      filter: {frontmatter: {type: {eq: "project"}}}
+    ) {
+      edges {
+        node {
+          id
+          fields {
+            images: galleryRelImgs {
+              relPath {
+                childImageSharp {
+                  sizes(maxWidth: 700, quality: 70) {
+                    ...GatsbyImageSharpSizes
+                  }
+                }
               }
+              description
+              featured
             }
           }
         }

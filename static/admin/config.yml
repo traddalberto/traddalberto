@@ -9,43 +9,30 @@ media_folder: "static/images" # Media files will be stored in the repo under src
 public_folder: "/images"
 
 collections:
-  - name: "fotos" # Used in routes, e.g., /admin/collections/blog
-    label: "Fotos" # Used in the UI
-    files:
-      - label: "Galeria"
-        name: "galeria"
-        file: "data/pages/Galeria.md"
-        delete: false
+  - name: "projetos" # Used in routes, e.g., /admin/collections/blog
+    label: "Projetos" # Used in the UI
+    folder: "data/projects"
+    create: true
+    fields:
+      - {name: "type", widget: hidden, default: "project"}
+      - {label: "Obs: Não faça o upload de imagens maiores que 4mb, use um otimizador de imagens se preciso (ex: http://www.imagesmaller.com/)", name: "instruções", widget: boolean, }
+      - {label: "Título (não aparece no site)", name: "title", widget: string, required: true}
+      - {label: "Data (usado para ordenar imagens na página)", name: "date", widget: "datetime", required: true}
+      - {label: "Descrição geral (opcional)", name: "description", widget: "text"}
+      - label: "Imagens da Galeria"
+        name: "gallery"
+        widget: "list"
         fields:
-          - {name: "type", widget: hidden}
-          - {name: "title", widget: hidden}
-          - {label: "Obs: Não faça o upload de imagens maiores que 4mb, use um otimizador de imagens se preciso (ex: http://www.imagesmaller.com/)", name: "instruções", widget: boolean, }
-          - label: "Imagens"
-            name: "images"
-            widget: "list"
-            required: true
-            fields:
-              - {label: "Título (não aparece no site)", name: "title", widget: "string"}
-              - {label: "Imagem selecionada", name: "img", widget: "image", required: true}
-              - {label: "Destaque", name: "featured", widget: "boolean", default: false, required: true}
-              - {label: "Descrição (opcional)", name: "description", widget: "markdown"}
-      - label: "Projetos"
-        name: "projetos"
-        file: "data/pages/Projetos.md"
-        delete: false
+          - {label: "Imagem selecionada", name: "img", widget: "image", required: true}
+          - {label: "Destaque (aumenta a largura da imagem na grid)", name: "featured", widget: "boolean", default: false, required: true}
+          - {label: "Descrição (opcional e sobrescreve a descrição geral)", name: "description", widget: "text"}
+      - label: "Imagens do projeto"
+        name: "project"
+        widget: "list"
         fields:
-          - {name: "type", widget: hidden}
-          - {name: "title", widget: hidden}
-          - {label: "Obs: Não faça o upload de imagens maiores que 4mb, use um otimizador de imagens se preciso (ex: http://www.imagesmaller.com/)", name: "instruções", widget: boolean, }
-          - label: "Imagens"
-            name: "images"
-            widget: "list"
-            required: true
-            fields:
-              - {label: "Título (não aparece no site)", name: "title", widget: "string"}
-              - {label: "Imagem selecionada", name: "img", widget: "image", required: true}
-              - {label: "Destaque", name: "featured", widget: "boolean", default: false, required: true}
-              - {label: "Descrição (opcional)", name: "description", widget: "markdown"}
+          - {label: "Imagem selecionada", name: "img", widget: "image", required: true}
+          - {label: "Destaque", name: "featured", widget: "boolean", default: false, required: true}
+          - {label: "Descrição (opcional e sobrescreve a descrição do projeto)", name: "description", widget: "text"}
   - name: "pages" # Used in routes, e.g., /admin/collections/blog
     label: "Páginas do site" # Used in the UI
     files:
