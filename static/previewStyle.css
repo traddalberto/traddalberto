@@ -1,13 +1,50 @@
-img {
-  max-width: 300px;
-  width: 100%;
-  max-height: 200px;
+.gallery-preview {
+  font-family: 'Segoe UI', 'helvetica', sans-serif
+ }
 
-  object-fit: cover;
-}
+ h1 {
+   font-size: 20px
+ }
 
-p {
-  font-size: 14px;
-  margin-bottom: 36px;
-  margin-top: 0;
-}
+ h2 {
+   float: left;
+   width: 100%;
+   font-size: 14px;
+   margin-top: 12px;
+   margin-bottom: 7px;
+ }
+
+ .gallery-item {
+   padding: 4px;
+   background-color: #eee;
+   float: left;
+   margin-right: 4px;
+   margin-bottom: 8px;
+
+   border-radius: 4px;
+ }
+
+ .gallery-item p {
+   width: 100%;
+
+   text-align: center;
+   font-size: 12px;
+   margin: 4px;
+ }
+
+ img {
+   max-width: 260px;
+   width: 100%;
+   max-height: 200px;
+
+   object-fit: cover;
+ }
+
+ img.featured {
+   max-width: 520px;
+ }
+
+ p {
+   font-size: 14px;
+   margin-top: 0;
+ }
