@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Trad Dalberto Arquitetura',
+    siteUrl: 'https://traddalberto.com.br/',
   },
   plugins: [
     'gatsby-plugin-react-next',
@@ -65,6 +66,7 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-netlify',
   ],
 };
