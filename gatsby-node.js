@@ -53,7 +53,7 @@ exports.onCreateNode = ({
         return {
           imgRef: item.img,
           relPath,
-          description: description || item.description,
+          description: item.description || description || '',
           featured: item.featured,
         }
       });
@@ -78,7 +78,7 @@ exports.onCreateNode = ({
         return {
           imgRef: item.img,
           relPath,
-          description: description || item.description,
+          description: item.description || description || '',
           featured: item.featured,
         }
       });
