@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/admin/*"
+  status = "200!"
+  conditions = { Role = ["admin"]}
