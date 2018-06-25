@@ -15,6 +15,8 @@ const Gallery = class extends React.PureComponent {
       selectedPos: null,
       modalIsOpen: false,
     };
+
+    this.flattenedImages = this.props.images.map(item => item.node.fields.images).reduce((a, b) => a.concat(b), []);
   }
 
   setImage = (i) => {
@@ -34,7 +36,7 @@ const Gallery = class extends React.PureComponent {
 
   increasePos = () => {
     this.setState({
-      selectedPos: this.state.selectedPos + 1 <= this.props.images.length - 1
+      selectedPos: this.state.selectedPos + 1 <= this.flattenedImages.length - 1
         ? this.state.selectedPos + 1 : this.state.selectedPos,
     });
   }
@@ -49,7 +51,6 @@ const Gallery = class extends React.PureComponent {
   render() {
     const {
       props: {
-        images,
         footer,
         className,
         isMobile,
@@ -60,9 +61,8 @@ const Gallery = class extends React.PureComponent {
         selectedPos,
         modalIsOpen,
       },
+      flattenedImages,
     } = this;
-
-    const flattenedImages = images.map(item => item.node.fields.images).reduce((a, b) => a.concat(b), []);
 
     return (
       <React.Fragment>

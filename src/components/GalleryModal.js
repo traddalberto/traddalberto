@@ -47,7 +47,7 @@ const GalleryModal = class extends React.Component {
       },
     } = this;
 
-    const description = pos ? (images[pos].description || null) : null;
+    const description = pos !== null ? (images[pos].description || null) : null;
 
     return (
       <AnimateMount
