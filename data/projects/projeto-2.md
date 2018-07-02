@@ -7,10 +7,7 @@ description: Teste descrição geral
 gallery:
   - description: sdfsdf
     featured: true
-    img: /images/_MAU6486.JPG
-project:
-  - description: sdfsdfsdfsdfsdfsdfsf
-    featured: false
-    img: /images/TD_20150730-0264.jpg
+    img: /images/Arquivo_000---fotos---Andrea e Guto.jpg
+project: []
 ---
 
