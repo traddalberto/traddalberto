@@ -2,6 +2,8 @@ import React from 'react';
 import Img from 'gatsby-image';
 import Link from 'gatsby-link';
 
+import { removeSpaceFromSrcSet } from '../utils';
+
 import Footer from './Footer';
 import GalleryModal from './GalleryModal';
 
@@ -74,7 +76,11 @@ const Gallery = class extends React.PureComponent {
                 className={`photo ${img.featured ? 'featured' : ''}`}
                 onClick={() => this.setImage(i)}
               >
-                <Img sizes={img.relPath.childImageSharp.sizes} />
+                <Img sizes={{
+                  ...img.relPath.childImageSharp.sizes,
+                  srcSet: removeSpaceFromSrcSet(img.relPath.childImageSharp.sizes.srcSet),
+                  }}
+                />
                 <div className="color-overlay fill-container" />
               </div>
             ))}

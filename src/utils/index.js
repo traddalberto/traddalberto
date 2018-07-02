@@ -46,3 +46,4 @@ export const smoothScrollToY = (scrollTargetY = 0, speed = 800, cubicBezier = [0
 
 export const getInnerHeight = () => windowGlobal.innerHeight;
 
+export const removeSpaceFromSrcSet = srcSet => srcSet.replace(/ +(?!\d+w)/g, '%20');
