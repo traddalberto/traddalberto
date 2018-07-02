@@ -11,9 +11,6 @@ description: >-
   escolhida para trazer leveza e priorizar os amplos espaços de circulação.  
 gallery:
   - img: /images/HNY_5834---fotos---Lina e Miranda.jpg
-  - img: /images/HNY_5890---fotos---Lina e Miranda.jpg
-  - img: /images/HNY_5933---fotos---Lina e Miranda.jpg
-  - img: /images/HNY_5874---fotos---Lina e Miranda.jpg
   - img: /images/HNY_5962---fotos---Lina e Miranda.jpg
   - img: /images/HNY_5818---fotos---Lina e Miranda.jpg
   - img: /images/HNY_5991---fotos---Lina e Miranda.jpg
@@ -22,8 +19,6 @@ gallery:
   - img: /images/HNY_5696---fotos---Lina e Miranda.jpg
   - img: /images/HNY_5717---fotos---Lina e Miranda.jpg
   - img: /images/HNY_5746---fotos---Lina e Miranda.jpg
-  - img: /images/HNY_5776---fotos---Lina e Miranda.jpg
-  - img: /images/HNY_5723---fotos---Lina e Miranda.jpg
   - img: /images/HNY_5798---fotos---Lina e Miranda.jpg
   - img: /images/HNY_5736---fotos---Lina e Miranda.jpg
 project: []
