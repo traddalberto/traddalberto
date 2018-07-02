@@ -1,18 +1,21 @@
 ---
 type: project
 instruções: true
-title: Projeto 1
+title: Projeto Lorena
 date: '2018-06-25T05:02:45-03:00'
 description: Descrição geral
 gallery:
-  - description: Testando descrição
-    featured: true
-    img: /images/IMG_4698.jpg
-project:
-  - description: Teste
-    img: /images/TD_20150730-0264.jpg
-  - description: ''
-    featured: true
-    img: /images/IMG_4698.jpg
+  - featured: false
+    img: /images/TD_20150731-0399---fotos---Luiz Appolonio.jpg
+  - img: /images/2305---fotos---Luiz Appolonio.jpg
+  - img: /images/TD_20150731-0477---fotos---Luiz Appolonio.jpg
+  - img: /images/2296---fotos---Luiz Appolonio.jpg
+  - img: /images/TD_20150731-0308---fotos---Luiz Appolonio.jpg
+  - img: /images/TD_20150731-0405---fotos---Luiz Appolonio.jpg
+  - img: /images/TD_20150731-0414---fotos---Luiz Appolonio.jpg
+  - img: /images/TD_20150731-0468---fotos---Luiz Appolonio.jpg
+  - img: /images/TD_20150731-0381---fotos---Luiz Appolonio.jpg
+  - {}
+project: []
 ---
 
