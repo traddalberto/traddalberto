@@ -13,7 +13,6 @@ description: >-
   apartamento foi padronizado para dar uniformidade ao projeto, e cores neutras
   foram o carro chefe dessa decoração sóbria e aconchegante.  
 gallery:
-  - img: /images/TD_20150731-0516---fotos---Luiz Appolonio.jpg
   - img: /images/TD_20150731-0503---fotos---Luiz Appolonio.jpg
   - img: /images/2278---fotos---Luiz Appolonio.jpg
   - img: /images/2290---fotos---Luiz Appolonio.jpg
