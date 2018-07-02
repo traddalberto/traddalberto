@@ -17,7 +17,6 @@ gallery:
   - img: /images/HNY_5653---fotos---Lina e Miranda.jpg
   - img: /images/HNY_5597---fotos---Lina e Miranda.jpg
   - img: /images/HNY_5696---fotos---Lina e Miranda.jpg
-  - img: /images/HNY_5717---fotos---Lina e Miranda.jpg
   - img: /images/HNY_5746---fotos---Lina e Miranda.jpg
   - img: /images/HNY_5798---fotos---Lina e Miranda.jpg
   - img: /images/HNY_5736---fotos---Lina e Miranda.jpg

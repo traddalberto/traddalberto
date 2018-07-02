@@ -18,16 +18,11 @@ gallery:
   - img: /images/2290---fotos---Luiz Appolonio.jpg
   - img: /images/2294---fotos---Luiz Appolonio.jpg
   - img: /images/TD_20150731-0381---fotos---Luiz Appolonio.jpg
-  - featured: false
-    img: /images/TD_20150731-0399---fotos---Luiz Appolonio.jpg
   - img: /images/2272---fotos---Luiz Appolonio.jpg
   - img: /images/TD_20150731-0308---fotos---Luiz Appolonio.jpg
   - img: /images/2305---fotos---Luiz Appolonio.jpg
   - img: /images/2296---fotos---Luiz Appolonio.jpg
   - img: /images/TD_20150731-0477---fotos---Luiz Appolonio.jpg
-  - img: /images/TD_20150731-0414---fotos---Luiz Appolonio.jpg
-  - img: /images/TD_20150731-0468---fotos---Luiz Appolonio.jpg
-  - img: /images/TD_20150731-0405---fotos---Luiz Appolonio.jpg
 project: []
 ---
 
