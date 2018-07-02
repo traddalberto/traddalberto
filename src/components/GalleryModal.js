@@ -13,7 +13,7 @@ const GalleryModal = class extends React.Component {
   getImageSrc = (srcSet) => {
     const srcSetList = srcSet.split(',');
 
-    return srcSetList[srcSetList.length - 1].trim().replace(/\s.*/, '');
+    return srcSetList[srcSetList.length - 1].trim().replace(/\s[0-9]+w/, '');
   }
 
   toggleInfoIsExpanded = () => {
