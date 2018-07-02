@@ -1,13 +1,31 @@
 ---
 type: project
 instruções: true
-title: Projeto 2
+title: Projeto Charles Dicksen
 date: '2018-06-25T05:18:24-03:00'
-description: Teste descrição geral
+description: >-
+  Este apartamento amplo e bem iluminado foi remodelado para receber uma família
+  super bacana e de muito bom gosto.
+
+  Marcado por peças clássicas e de design consagrado, a decoração clean foi
+  escolhida para trazer leveza e priorizar os amplos espaços de circulação.  
 gallery:
-  - description: sdfsdf
-    featured: true
-    img: /images/Arquivo_000---fotos---Andrea e Guto.jpg
+  - img: /images/HNY_5834---fotos---Lina e Miranda.jpg
+  - img: /images/HNY_5890---fotos---Lina e Miranda.jpg
+  - img: /images/HNY_5933---fotos---Lina e Miranda.jpg
+  - img: /images/HNY_5874---fotos---Lina e Miranda.jpg
+  - img: /images/HNY_5962---fotos---Lina e Miranda.jpg
+  - img: /images/HNY_5818---fotos---Lina e Miranda.jpg
+  - img: /images/HNY_5991---fotos---Lina e Miranda.jpg
+  - img: /images/HNY_5653---fotos---Lina e Miranda.jpg
+  - img: /images/HNY_5597---fotos---Lina e Miranda.jpg
+  - img: /images/HNY_5696---fotos---Lina e Miranda.jpg
+  - img: /images/HNY_5717---fotos---Lina e Miranda.jpg
+  - img: /images/HNY_5746---fotos---Lina e Miranda.jpg
+  - img: /images/HNY_5776---fotos---Lina e Miranda.jpg
+  - img: /images/HNY_5723---fotos---Lina e Miranda.jpg
+  - img: /images/HNY_5798---fotos---Lina e Miranda.jpg
+  - img: /images/HNY_5736---fotos---Lina e Miranda.jpg
 project: []
 ---
 
