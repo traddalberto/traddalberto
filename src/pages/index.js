@@ -15,12 +15,12 @@ const Home = class extends React.Component {
   }
 
   componentDidMount() {
-    // hack for play bg video on smartphone with data saver on
-    window.addEventListener('click', this.playVideo);
+    // hack for play bg video on mobile chrome with data saver on
+    window.addEventListener('touchstart', this.playVideo);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('click', this.playVideo);
+    window.removeEventListener('touchstart', this.playVideo);
   }
 
   toggleVideoModal = () => {
