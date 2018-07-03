@@ -2,7 +2,7 @@
 type: project
 instruções: true
 title: Projeto Lorena
-date: '2018-06-25T05:02:45-03:00'
+date: '2018-07-02T05:02:45-03:00'
 description: >-
   Este apartamento antigo no bairro dos Jardins foi totalmente remodelado para
   atender às necessidades do jovem casal.
