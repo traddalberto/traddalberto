@@ -18,7 +18,10 @@ const Gallery = class extends React.PureComponent {
       modalIsOpen: false,
     };
 
-    this.flattenedImages = this.props.images.map(item => item.node.fields.images).reduce((a, b) => a.concat(b), []);
+    this.flattenedImages = this.props.images
+      .map(item => item.node.fields.images)
+      .reduce((a, b) => a.concat(b), [])
+      .filter(item => item);
   }
 
   setImage = (i) => {
