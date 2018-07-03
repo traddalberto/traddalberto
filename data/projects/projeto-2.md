@@ -2,7 +2,7 @@
 type: project
 instruções: true
 title: Projeto Charles Dicksen
-date: '2018-06-25T05:18:24-03:00'
+date: '2018-07-03T05:18:24-03:00'
 description: >-
   Este apartamento amplo e bem iluminado foi remodelado para receber uma família
   super bacana e de muito bom gosto.
