@@ -54,7 +54,7 @@ exports.onCreateNode = ({
           imgRef: item.img,
           relPath,
           description: item.description || description || '',
-          featured: item.featured,
+          featured: item.featured || false,
         }
       });
 
