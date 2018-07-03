@@ -14,6 +14,15 @@ const Home = class extends React.Component {
     videoIsOpen: false,
   }
 
+  componentDidMount() {
+    // hack for play bg video on smartphone with data saver on
+    window.addEventListener('click', this.playVideo);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('click', this.playVideo);
+  }
+
   toggleVideoModal = () => {
     document.documentElement.style.overflowY = !this.state.videoIsOpen ? 'hidden' : null;
 
@@ -21,9 +30,15 @@ const Home = class extends React.Component {
 
     if (!this.state.videoIsOpen) {
       this.video.pause();
+      this.videoIsPlaying = false;
     } else {
-      this.video.play();
+      this.playVideo();
     }
+  }
+
+  playVideo = () => {
+    if (!this.videoIsPlaying) this.video.play();
+    this.videoIsPlaying = true;
   }
 
   render() {
