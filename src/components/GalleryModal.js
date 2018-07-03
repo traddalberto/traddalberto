@@ -26,12 +26,18 @@ const GalleryModal = class extends React.Component {
   }
 
   increasePos = () => {
-    this.setState({ infoIsExpanded: false });
+    if (this.props.images[this.props.pos].description !== this.props.images[this.props.pos + 1].description) {
+      this.setState({ infoIsExpanded: false });
+    }
+
     this.props.increasePos();
   }
 
   decreasePos = () => {
-    this.setState({ infoIsExpanded: false });
+    if (this.props.images[this.props.pos].description !== this.props.images[this.props.pos - 1].description) {
+      this.setState({ infoIsExpanded: false });
+    }
+
     this.props.decreasePos();
   }
 
