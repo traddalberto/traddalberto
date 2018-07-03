@@ -7,5 +7,6 @@ project:
   - img: /images/pav.inf.01.jpg
   - img: /images/pav.sup.05.jpg
   - img: /images/sala-cinema04.jpg
+  - img: /images/reunião-mini02.jpg
 ---
 
