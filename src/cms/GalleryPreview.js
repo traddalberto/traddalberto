@@ -7,7 +7,7 @@ const GalleryPreview = ({ entry, widgetsFor, getAsset }) => (
 
     <h2>Imagens da galeria</h2>
     {widgetsFor('gallery').map((item, i) => (
-      item
+      item.getIn(['data', 'img'])
         ? <div key={i} className="gallery-item">
           <img className={item.getIn(['data', 'featured']) ? 'featured' : ''} alt="" src={getAsset(item.getIn(['data', 'img']))} />
           <p>{item.getIn(['data', 'description'])}</p>
@@ -17,7 +17,7 @@ const GalleryPreview = ({ entry, widgetsFor, getAsset }) => (
 
     <h2>Imagens do projeto</h2>
     {widgetsFor('project').map((item, i) => (
-      item
+      item.getIn(['data', 'img'])
         ? <div key={i} className="gallery-item">
           <img className={item.getIn(['data', 'featured']) ? 'featured' : ''} alt="" src={getAsset(item.getIn(['data', 'img']))} />
           <p>{item.getIn(['data', 'description'])}</p>
