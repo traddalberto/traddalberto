@@ -2,7 +2,7 @@
 type: project
 instruções: true
 title: Beth Araujo
-date: '2018-07-02T17:29:13-03:00'
+date: '2018-07-01T17:29:13-03:00'
 description: 'Projeto elegante e clássico para os ambientes desta casa em Alphaville. '
 gallery: []
 project:
