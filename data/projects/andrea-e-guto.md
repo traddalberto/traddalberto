@@ -9,7 +9,6 @@ gallery:
   - img: /images/IMG_5369---fotos---Andrea e Guto.jpg
   - img: /images/IMG_5367---fotos---Andrea e Guto.jpg
   - img: /images/IMG_5374---fotos---Andrea e Guto.jpg
-project:
-  - {}
+project: []
 ---
 
