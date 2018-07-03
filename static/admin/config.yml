@@ -17,7 +17,7 @@ collections:
       - {name: "type", widget: hidden, default: "project"}
       - {label: "Obs: Não faça o upload de imagens maiores que 4mb, use um otimizador de imagens se preciso (ex: http://www.imagesmaller.com/)", name: "instruções", widget: boolean, }
       - {label: "Título (não aparece no site)", name: "title", widget: string, required: true}
-      - {label: "Data (usado para ordenar imagens na página)", name: "date", widget: "datetime", required: true}
+      - {label: "Data (usado para ordenar imagens na página, as mais recentes aparecem primeiro)", name: "date", widget: "datetime", required: true}
       - {label: "Descrição geral (opcional)", name: "description", widget: "text", required: false}
       - label: "Imagens da Galeria"
         name: "gallery"
